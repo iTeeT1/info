@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>iTeeT1's Website</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+	<header id="myHeader">
+		<img src="images/iTeeT1_Banner.png" alt="Logo" class="logo">
+		<nav>
+			<a href="#" class="hide-desktop">
+				<img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+			</a>
+			<ul class="show-desktop hide-mobile" id="nav">
+				<li class="exit-btn hide-desktop" id="exit"><img src="images/exit.svg" alt="exit menu"></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#projects">My Projects</a></li>
+				<li><a href="#social-media">Social Media</a></li>
+				<li><a href="#about-me">About Me</a></li>
+				<li><a href="#email">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+		<section>
+			<img src="images/iTeeT1_Banner.png" alt="iTeeT1 graphic" class="graphic">
+
+			<h1>iTeeT1 - Lorenz</h1>
+			<p class="subhead">My basic website with a some information on me.</p>
+
+		</section>
+	</div>
+
+	<div class="red-container" id="projects">
+		<div class="container">
+
+			<h1 class="projects_headline">iTeeT1 - My Projects</h1>
+			<p class="projects_headline">A few projects of mine.</p>
+
+			<ul>
+				<li>
+					<p>
+						Title: example project #1
+						<br>
+						Description: coming soon...
+					</p>
+				</li>
+				<li>
+					<p>
+						Title: example project #2
+						<br>
+						Description: coming soon...
+					</p>
+				</li>
+				<li>
+					<p>
+						Title: example project #3
+						<br>
+						Description: coming soon...
+					</p>
+				</li>
+			</ul>
+
+			<p class="projects_headline">To see all projects with theire links to eg. theire GitHub repository or theire playlist click <a href="projects.html">here</a>.</p>
+
+		</div>
+	</div>
+
+	<div class="grey-container">
+		<div class="container" id="social-media">
+			<ul>
+				<li><a href="https://youtube.com/channel/UCSs_Bro7KxLOD4R-ofx-mHw" target="_blank">
+					<figure>
+						<img src="images/youtube.png" alt="Youtube Logo">
+						<blockquote>Visit my YouTube channel to see my uploaded videos where I follow up with my projects and also make a few gaming videos.<bockquote>
+					</figure>
+				</a></li>
+				<li><a href="https://twitch.tv/iteet1" target="_blank">
+					<figure>
+						<img src="images/twitch.png" alt="Twitch Logo">
+						<blockquote>Check out my Twitch channel if you want to watch me programming live, something else I'm working on or sometimes some gaming.<bockquote>
+					</figure>
+				</a></li>
+			</ul>
+			<hr>
+			<ul>
+				<li><a href="https://twitter.com/iTeeT1_" target="_blank">
+					<figure>
+						<img src="images/twitter.png" alt="Twitter Logo">
+						<blockquote>See my Twitter Account, where I actually don't tweet anything at the time so currently following is totally useless...<bockquote>
+					</figure>
+				</a></li>
+				<li><a href="https://instagram.com/iteet1" target="_blank">
+					<figure>
+						<img src="images/instagram.png" alt="Instagram Logo">
+						<blockquote>Also on my Instagram I have never uploaded a single photo until this point so... you can follow for the future when I might upload one or make a story.<bockquote>
+					</figure>
+				</a></li>
+			</ul>
+			<hr>
+			<ul>
+				<li><a href="https://github.com/iTeeT1" target="_blank">
+					<figure>
+						<img src="images/GitHub.png" alt="GitHub Logo">
+						<blockquote>Click the link to get to my GitHub profile to see all my projects I have there and participate in them.<bockquote>
+					</figure>
+				</a></li>
+				<li><a href="#social-media" target="_blank">
+					<figure>
+						<img src="images/discord.png" alt="Discord Logo">
+						<blockquote>Here's the invitation to my Discord server. As it still is in setup and not public at the time so you can't join him yet.<bockquote>
+					</figure>
+				</a></li>
+			</ul>
+			<hr>
+			<figure id="email">
+				<br><br>
+				<img src="images/email.png" alt="@ Symbol">
+				<blockquote>Want to write me an email?<br>Here you go:<br>info.iteet1@gmail.com<bockquote>
+			</figure>
+		</div>
+	</div>
+
+	<div class="container" id="about-me">
+		<h2>About Me:</h2>
+		<figure>
+			<img src="images/lorenz.png" alt="Lorenz Photo">
+			<blockquote>Hey there! I'm Lorenz or iTeeT1 as I named myself on the internet. I like making videos about all the stuff I do. As I'm also a fan of programming you will find videos where I talk about the things I programmed. At the time I do this in livestreams where you can participate through GitHub and of course the chat. Also I like playing video games about which I also make videos or livestreams. Tune in when you like and have fun!<bockquote>
+			<figcaption>- Lorenz / iTeeT1</figcaption>
+		</figure>
+		<hr>
+		<a href="faq.html" class="faq">FAQ</a>
+	</div>
+
+	<footer>
+		<div class="footer-container">
+			<div class="container">
+				<a href="#">
+					<img src="images/iTeeT1_Banner.png" class="logo" alt="Logo">
+				</a>
+				<p class="address">info.iteet1@gmail.com<br>Lorenz</p>
+				<ul class="footer-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#email">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+	<script>
+			var menu = document.getElementById('menu');
+			var nav = document.getElementById('nav');
+			var exit = document.getElementById('exit');
+			
+			menu.addEventListener('click', function(e) {
+				nav.classList.toggle('hide-mobile');
+				e.preventDefault();
+			});
+
+			exit.addEventListener('click', function(e) {
+				nav.classList.add('hide-mobile');
+				e.preventDefault();
+			});
+
+			// When the user scrolls the page, execute myFunction
+			window.onscroll = function() {myFunction()};
+
+			// Get the header
+			var header = document.getElementById("myHeader");
+
+			// Get the offset position of the navbar
+			var sticky = header.offsetTop;
+
+			// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+			  if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			  } else {
+				header.classList.remove("sticky");
+			  }
+			} 
+	</script>
+
+</body>
+</html>

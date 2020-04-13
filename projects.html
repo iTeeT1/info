@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>iTeeT1's Website</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+	<header>
+		<nav>
+			<a href="#" class="hide-desktop">
+				<img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+			</a>
+			<ul class="show-desktop hide-mobile" id="nav">
+				<li class="exit-btn hide-desktop" id="exit"><img src="images/exit.svg" alt="exit menu"></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="index.html#projects">My Projects</a></li>
+				<li><a href="index.html#social-media">Social Media</a></li>
+				<li><a href="index.html#about-me">About Me</a></li>
+				<li><a href="index.html#email">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="container">
+		<section>
+			<img src="images/iTeeT1_Banner.png" alt="iTeeT1 graphic" class="graphic">
+
+			<h1>iTeeT1 - My Projects</h1>
+			<p class="subhead">A summary of my projects and what I'm working on.</p>
+
+		</section>
+	</div>
+
+	<div class="grey-container">
+		<div class="container" id="social-media">
+			<h1>Current:</h1>
+			<p><blockquote>
+				Title: example project #1
+				<br>
+				Description: coming soon...
+				<br>
+				Link(s): <a href="#grey-container">coming soon...</a>, <a href="#grey-container">coming soon...</a>
+				<br>
+			</blockquote></p>
+			<hr>
+			<p><blockquote>
+				Title: example project #2
+				<br>
+				Description: coming soon...
+				<br>
+				Link(s): <a href="#grey-container">coming soon...</a>
+				<br>
+			</blockquote></p>
+			<hr>
+			<p><blockquote>
+				Title: example project #3
+				<br>
+				Description: coming soon...
+				<br>
+				Link(s): <a href="#grey-container">coming soon...</a>, <a href="#grey-container">coming soon...</a>, <a href="#grey-container">coming soon...</a>
+				<br>
+			</blockquote></p>
+			<br><br>
+			<h1>Finished:</h1>
+			<p><blockquote>
+				Title: example project #4
+				<br>
+				Description: coming soon...
+				<br>
+				Link(s): <a href="#grey-container">coming soon...</a>, <a href="#grey-container">coming soon...</a>
+				<br>
+			</blockquote></p>
+			<hr>
+			<p><blockquote>
+				Title: example project #4
+				<br>
+				Description: coming soon...
+				<br>
+				Link(s): <a href="#grey-container">coming soon...</a>, <a href="#grey-container">coming soon...</a>
+				<br>
+			</blockquote></p>
+		</div>
+	</div>
+
+	<div class="container" id="about-me">
+		<a href="index.html" class="faq">Main Page</a>
+	</div>
+
+	<footer>
+		<div class="footer-container">
+			<div class="container">
+				<a href="#">
+					<img src="images/iTeeT1_Banner.png" class="logo" alt="Logo">
+				</a>
+				<p class="address">info.iteet1@gmail.com<br>Lorenz</p>
+				<ul class="footer-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#email">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+
+	<script>
+			var menu = document.getElementById('menu');
+			var nav = document.getElementById('nav');
+			var exit = document.getElementById('exit');
+			
+			menu.addEventListener('click', function(e) {
+				nav.classList.toggle('hide-mobile');
+				e.preventDefault();
+			});
+
+			exit.addEventListener('click', function(e) {
+				nav.classList.add('hide-mobile');
+				e.preventDefault();
+			});
+	</script>
+
+</body>
+</html>
